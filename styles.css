@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", serif;
+}
+
+/* Titles */
+h1,
+h2,
+.recipe-time__title {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+}
+
+/* HEADER */
+.header__image {
+  /* border: 1px solid red; */
+  background-image: url("./assets/images/image-omelette.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 220px;
+  /* width: 100%; */
+}
+
+main,
+.header__content {
+  padding: 1.25em 3em;
+}
+
+.header__title {
+  margin: 0.75em 0;
+}
+
+.header__description,
+.recipe-nutrition__description {
+  line-height: 1.4;
+}
+
+li {
+  list-style-position: inside;
+  line-height: 1.4;
+}
+
+/* Recipe time */
+
+.recipe-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 7px;
+  /* border: 1px solid green; */
+  padding: 1.5em 2.2em;
+}
+
+.recipe-time__title {
+  /* border: 1px solid red; */
+  display: block;
+  /* padding-left: 1.5em; */
+  padding-bottom: 0.8em;
+  color: hsl(332, 51%, 32%);
+  font-weight: 550;
+  font-size: 1.25rem;
+}
+
+li,
+.recipe-nutrition__description,
+.header__description {
+  margin-bottom: 0.75em;
+  color: hsl(30, 10%, 34%);
+}
+
+.recipe-time__list > li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+li strong {
+  margin-right: 4.5px;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  margin: 1em 0;
+}
+
+/* Recipe ingredients */
+
+.recipe-ingredients,
+.recipe-instructions,
+tr {
+  /* border: 1px solid red; */
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1.5em;
+}
+
+.recipe-ingredients__list > li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.recipe-ingredients__list > li,
+.recipe-instructions__list > li {
+  text-indent: -20px;
+  padding-left: 20px;
+}
+
+/* Recipe nutrition */
+
+.recipe-nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 0.7em 2.3em;
+}
+
+.brown {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* Media queries */
+
+@media (max-width: 450px) {
+  main,
+  .header__content {
+    padding: 1em 1.5em;
+  }
+}
+
+@media (min-width: 650px) {
+  .header__image {
+    /* border: 1px solid red; */
+    margin: 2em 2em 0;
+    /* height: 25vh; */
+    border-radius: 13px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .container {
+    width: 75%;
+    background-color: #fff;
+    margin: 2.5em 0;
+    border-radius: 13px;
+  }
+}
+
+@media (min-width: 870px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1150px) {
+  /* .header__image {
+    height: 45vh;
+  } */
+
+  .container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .header__image {
+    height: 42vh;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  li {
+    font-size: 1.1rem;
+  }
+}
